@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body 
+{
+   background: #181719;
+   color: #fff;
+}
+
+.nav 
+{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav .logo
+{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    height: 32px;
+    width: 102px;
+    font-size: 14px;
+    font-family: 'Crimson Pro', serif;
+    margin-top: 46px;
+    margin-left: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.navbar 
+{
+    display: flex;
+}
+.item
+{
+    list-style: none;
+    margin: 46px 86px 0 0;
+}
+.item a 
+{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.item a.active 
+{
+    border-bottom: 2px solid #fff;
+}
+.fa-align-justify
+{
+    display: none;
+    cursor: pointer;
+}
+.fa-times
+{
+    display: none;
+    cursor: pointer;
+}
+/*section*/
+.container 
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.content 
+{
+    margin-left: 77px;
+    margin-top: 300px;
+    width: 400px;
+}
+.content h1 
+{
+    font-weight: 500;
+    font-size: 48px;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.content p 
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    height: 150px;
+    width: 367px;
+    margin-bottom: 40px;
+}
+.content a
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    text-decoration: none;
+}
+.image 
+{
+    margin-top: 150px;
+    width: 780px;
+    margin-left: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.image .photo
+{
+    margin-top: 20px;
+    height: 527px;
+    width: 738px;
+}
+.card 
+{
+    position: relative;
+    bottom: 100px;
+    left: 100px;
+    height: 189px;
+    width: 410px;
+    background: #181719;
+    box-shadow: .2px 4px 5px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+}
+.card .photo2
+{
+    margin-top: 20px;
+    margin-left: 30px;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+}
+h4 
+{
+   position: absolute;
+   left: 110px;
+   top: 27px;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 17px;
+   text-align: left;
+}
+.card p
+{
+    position: absolute;
+    top: 50px;
+    left: 110px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    text-align: left;
+    color:#828282 ;
+}
+h2 
+{
+    margin-top: 11px;
+    margin-left: 26px;
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+}
+.footer
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+    color: #A9A9A9;
+    text-align: center;
+}
+
+.footer a 
+{
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+font-weight: 600;
+line-height: 17px;
+text-align: center;
+text-decoration: none;
+color: #A9A9A9;
+}
+@media (max-width: 1024px)
+{
+    .container
+    {
+        grid-template-columns:  auto;
+    }
+  .nav .logo 
+    {
+        
+        margin-top: 12px;
+        margin-left: 10px;
+        z-index: 11;
+    }
+   .fa-align-justify
+   {
+    display: block;
+    margin-top: 21px;
+    font-size: 20px;
+    margin-right: 19px;
+   }
+    .navbar
+    {
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        height: 0;
+        z-index: 10;
+        align-items: center;
+        justify-content: center;
+        background: #181719;
+        transition: .6s ease-in-out;
+    }
+    .navbar .item 
+    {
+        display: none;
+    } 
+    .fa-times
+    {
+        z-index: 10;
+        margin-top: 21px;
+        margin-right: 19px;
+        font-size: 20px;
+        transition: .6s ease-in-out;
+        display: none;
+    }
+    .navbar.activate 
+    {
+        height: 100%;
+    }
+    .navbar .item.activate 
+    {
+        display: block;
+        margin: 32px auto;
+        transition: .6s ease-in-out;
+    }
+    .fa-times.activate 
+    {
+        display: block;
+        transition: .6s ease-in-out;
+    }
+    .fa-align-justify.activate 
+    {
+        display: none;
+    }
+    .content
+    {
+        margin-top: 8px;
+        margin-left: 12px;
+        height: 200px;
+        width: 300px;
+    }
+    .content h1 
+    {
+        font-family: 'Lora', serif;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 46px;
+        margin-bottom: 25px;
+    }
+    .content p
+    {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: left;
+        height: 85px;
+        width: 250px;
+        margin-bottom: 25px;
+    }
+    .content a 
+    {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        text-align: left;
+    }
+    .image 
+    {
+        margin-top: 25px;
+       width: 100%;
+       height: 80%;
+       margin-left: initial;
+    }
+    .image .photo
+    {
+        width: 90%;
+        height: 90%;
+    }
+    .card 
+    {
+        bottom: 50px;
+        left: 10px;
+        height: 150px;
+        width: 300px;
+    }
+    .card .photo2 
+    {
+        margin-top: 8px;
+        margin-left: 10px;
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+    }
+    h4 
+    {
+        font-size: 10px;
+        line-height: 15px;
+        left: 60px;
+        top: 10px;
+    }
+    .card p
+    {
+    top: 24px;
+    left: 60px;
+    font-size: 10px;
+    }
+    h2 
+    {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+    text-align: left;
+    }
+
+    .footer p
+{
+    font-size: 14px;
+}
+.footer a 
+{
+    font-size: 14px;
+}
+.footer
+{
+    position: relative;
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+}
+}

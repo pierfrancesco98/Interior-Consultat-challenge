@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Interior-consultat-challenge}</h1>
+<h1 align="center">Interior-consultat-challenge</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{pisaniwebdesign.com/pagina/interior}">
+    <a href="https://pisaniwebdesign.com/pagina/interior">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://https://devchallenges.io/solutions/LVCWSVCnX26TNNrLldZj">
       Solution
     </a>
     <span> | </span>
@@ -63,5 +63,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- Website [pisaniwebdesign.com](https://{pisaniwebdesign.com})
-- GitHub [@pierfrancesco98](https://{github.com/pierfrancesco98})
+- Website [pisaniwebdesign.com](https://pisaniwebdesign.com)
+- GitHub [@pierfrancesco98](https://github.com/pierfrancesco98)
